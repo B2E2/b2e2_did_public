@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "id": "@id",
+    "type": "@type",
+    "@protected": true,
+    "proof": {
+      "@id": "https://w3id.org/security#proof",
+      "@type": "@id",
+      "@container": "@graph"
+    },
+    "EcdsaSecp256k1Erc735RecoveryMethod2023": {
+      "@id": "https://github.com/ethereum/eips/issues/735",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "controller": {
+          "@id": "https://w3id.org/security#controller",
+          "@type": "@id"
+        },
+        "blockchainAccountId": "https://w3id.org/security#blockchainAccountId",
+        "publicKeyJwk": {
+          "@id": "https://w3id.org/security#publicKeyJwk",
+          "@type": "@json"
+        }
+      }
+    }
+  }
+}
