@@ -17,7 +17,7 @@
         "issuer": "https://github.com/ethereum/eips/issues/735#Definitions-claim-issuer",
         "signature": "https://github.com/ethereum/eips/issues/735#Definitions-claim-signature",
         "data": "https://github.com/ethereum/eips/issues/735#Definitions-claim-data",
-		"uri": "https://github.com/ethereum/eips/issues/735#Definitions-claim-uri"
+        "uri": "https://github.com/ethereum/eips/issues/735#Definitions-claim-uri"
       }
     }
   }
