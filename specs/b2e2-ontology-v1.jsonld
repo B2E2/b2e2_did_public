@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#",
+
+    "FISSION": "FISSION",
+    "FUSION": "FUSION",
+    "PV": "PV",
+    "PVP": "PVP",
+    "CSP": "CSP",
+    "GEOTHERMAL": "GEOTHERMAL",
+    "HEATPUMP": "HEATPUMP",
+    "ONSHOREWIND": "ONSHOREWIND",
+    "OFFSHOREWIND": "OFFSHOREWIND",
+    "WAVE": "WAVE",
+    "NATURALGAS": "NATURALGAS",
+    "BIOGAS": "BIOGAS",
+    "BROWNCOAL": "BROWNCOAL",
+    "BLACKCOAL": "BLACKCOAL",
+    "OIL": "OIL",
+    "DIESEL": "DIESEL",
+    "GARBAGE": "GARBAGE",
+    "HYDROR": "HYDROR",
+    "HYDROPS": "HYDROPS",
+    "HYDROWS": "HYDROWS",
+    "OTHER": "OTHER",
+
+    "generationType": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#generationType",
+      "@type": "@vocab"
+    }
+  }
+}

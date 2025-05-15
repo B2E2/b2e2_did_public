@@ -19,6 +19,11 @@
         "data": "https://github.com/ethereum/eips/issues/735#Definitions-claim-data",
         "uri": "https://github.com/ethereum/eips/issues/735#Definitions-claim-uri"
       }
+    },
+
+    "generationType": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#generationType",
+      "@type": "@vocab"
     }
   }
 }
