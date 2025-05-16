@@ -3,6 +3,9 @@
     "@version": 1.1,
     "@vocab": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#",
 
+    "generation": "generation",
+    "consumption": "consumption",
+
     "FISSION": "FISSION",
     "FUSION": "FUSION",
     "PV": "PV",
@@ -24,6 +27,11 @@
     "HYDROPS": "HYDROPS",
     "HYDROWS": "HYDROWS",
     "OTHER": "OTHER",
+
+    "type": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#type",
+      "@type": "@vocab"
+    },
 
     "generationType": {
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#generationType",
