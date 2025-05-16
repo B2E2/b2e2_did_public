@@ -61,6 +61,17 @@
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#maxCon",
       "@type": "http://www.w3.org/2001/XMLSchema#integer",
       "@comment": "Maximum power consumption in kilowatts (kW)."
+    },
+
+    "EthereumAddress": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#EthereumAddress",
+      "@type": "http://www.w3.org/2001/XMLSchema#string",
+      "@comment": "A hexadecimal string representing an Ethereum address (e.g., 0x...)."
+    },
+
+    "energyTokenContractAddress": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#energyTokenContractAddress",
+      "@type": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#EthereumAddress"
     }
   }
 }
