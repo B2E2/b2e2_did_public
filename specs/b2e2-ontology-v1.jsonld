@@ -77,6 +77,12 @@
     "energyTokenContractAddress": {
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#energyTokenContractAddress",
       "@type": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#EthereumAddress"
+    },
+
+    "data": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#data",
+      "@type": "http://www.w3.org/2001/XMLSchema#string",
+      "@comment": "A JSON-encoded string containing typed fields like startDate, generationType, etc."
     }
   }
 }
