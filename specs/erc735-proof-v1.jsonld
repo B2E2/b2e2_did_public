@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "EcdsaSecp256k1Erc735RecoveryMethod2023": {
+      "@id": "https://b2e2.org/vocab#EcdsaSecp256k1Erc735RecoveryMethod2023",
+      "@type": "@id",
+      "@context": {
+        "proofValue": "https://w3id.org/security#proofValue",
+        "verificationMethod": "https://w3id.org/security#verificationMethod",
+        "proofPurpose": "https://w3id.org/security#proofPurpose",
+        "blockchainAccountId": "https://b2e2.org/vocab#blockchainAccountId",
+        "created": "http://purl.org/dc/terms/created"
+      },
+      "description": "ECDSA secp256k1 proof compatible with ERC-735: signature is over keccak256(address, topic, data) bytes."
+    }
+  }
+}
