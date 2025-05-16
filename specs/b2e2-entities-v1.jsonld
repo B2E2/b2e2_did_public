@@ -47,6 +47,16 @@
     "location": {
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#location",
       "@type": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#SimplePolygon"
+    },
+
+    "maxGen": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#maxGen",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+
+    "maxCon": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#maxCon",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
     }
   }
 }
