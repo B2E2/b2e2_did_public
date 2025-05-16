@@ -40,6 +40,11 @@
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
 
+    "marketRules": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#marketRules",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+
     "SimplePolygon": {
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#SimplePolygon",
       "@type": "@json",
