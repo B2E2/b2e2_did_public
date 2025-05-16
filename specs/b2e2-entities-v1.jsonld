@@ -34,6 +34,10 @@
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#unixTimestamp",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
+    "installationDate": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#unixTimestamp",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
     "unixTimestamp": {
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#unixTimestamp",
       "@type": "http://www.w3.org/2001/XMLSchema#integer"
