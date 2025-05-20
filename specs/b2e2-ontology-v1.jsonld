@@ -6,27 +6,90 @@
     "generation": "generation",
     "consumption": "consumption",
 
-    "FISSION": "FISSION",
-    "FUSION": "FUSION",
-    "PV": "PV",
-    "PVP": "PVP",
-    "CSP": "CSP",
-    "GEOTHERMAL": "GEOTHERMAL",
-    "HEATPUMP": "HEATPUMP",
-    "ONSHOREWIND": "ONSHOREWIND",
-    "OFFSHOREWIND": "OFFSHOREWIND",
-    "WAVE": "WAVE",
-    "NATURALGAS": "NATURALGAS",
-    "BIOGAS": "BIOGAS",
-    "BROWNCOAL": "BROWNCOAL",
-    "BLACKCOAL": "BLACKCOAL",
-    "OIL": "OIL",
-    "DIESEL": "DIESEL",
-    "GARBAGE": "GARBAGE",
-    "HYDROR": "HYDROR",
-    "HYDROPS": "HYDROPS",
-    "HYDROWS": "HYDROWS",
-    "OTHER": "OTHER",
+    "FISSION": {
+      "@id": "FISSION",
+      "@comment": "Nuclear fission – energy from splitting atomic nuclei."
+    },
+    "FUSION": {
+      "@id": "FUSION",
+      "@comment": "Nuclear fusion – energy from fusing atomic nuclei."
+    },
+    "PV": {
+      "@id": "PV",
+      "@comment": "Photovoltaics – rooftop or small-scale solar panels converting sunlight to electricity."
+    },
+    "PVP": {
+      "@id": "PVP",
+      "@comment": "Photovoltaics park – large-scale solar farms generating electricity from sunlight."
+    },
+    "CSP": {
+      "@id": "CSP",
+      "@comment": "Concentrated Solar Power – mirrors focus sunlight to produce thermal energy and generate electricity."
+    },
+    "GEOTHERMAL": {
+      "@id": "GEOTHERMAL",
+      "@comment": "Geothermal – energy from Earth's internal heat."
+    },
+    "HEATPUMP": {
+      "@id": "HEATPUMP",
+      "@comment": "Heat pump – transfers heat from air, ground, or water to provide heating or cooling."
+    },
+    "ONSHOREWIND": {
+      "@id": "ONSHOREWIND",
+      "@comment": "Onshore wind – wind turbines located on land generating electricity."
+    },
+    "OFFSHOREWIND": {
+      "@id": "OFFSHOREWIND",
+      "@comment": "Offshore wind – wind turbines located at sea."
+    },
+    "WAVE": {
+      "@id": "WAVE",
+      "@comment": "Wave – energy derived from ocean surface waves."
+    },
+    "NATURALGAS": {
+      "@id": "NATURALGAS",
+      "@comment": "Natural gas – fossil fuel used in thermal power generation."
+    },
+    "BIOGAS": {
+      "@id": "BIOGAS",
+      "@comment": "Biogas – produced from organic matter through anaerobic digestion."
+    },
+    "BROWNCOAL": {
+      "@id": "BROWNCOAL",
+      "@comment": "Brown coal (lignite) – a soft, brownish coal used in thermal power generation."
+    },
+    "BLACKCOAL": {
+      "@id": "BLACKCOAL",
+      "@comment": "Black coal – harder and higher energy coal compared to brown coal."
+    },
+    "OIL": {
+      "@id": "OIL",
+      "@comment": "Oil – petroleum used in energy production."
+    },
+    "DIESEL": {
+      "@id": "DIESEL",
+      "@comment": "Diesel – refined petroleum product used in generators and engines."
+    },
+    "GARBAGE": {
+      "@id": "GARBAGE",
+      "@comment": "Garbage – waste used for incineration and energy recovery."
+    },
+    "HYDROR": {
+      "@id": "HYDROR",
+      "@comment": "Run-of-river hydro – uses river flow without large reservoirs to generate electricity."
+    },
+    "HYDROPS": {
+      "@id": "HYDROPS",
+      "@comment": "Pumped-storage hydro – stores energy by pumping water to a higher elevation and releasing it to generate electricity when needed."
+    },
+    "HYDROWS": {
+      "@id": "HYDROWS",
+      "@comment": "Reservoir hydro – conventional hydroelectric power from large dammed reservoirs."
+    },
+    "OTHER": {
+      "@id": "OTHER",
+      "@comment": "Other – any energy generation type not categorized above."
+    },
 
     "type": {
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#type",
