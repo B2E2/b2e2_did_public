@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "@version": 2,
+    "GENERATION_TYPE_CLAIM": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types/GENERATION_TYPE_CLAIM-v2.jsonld#GENERATION_TYPE_CLAIM",
+    "data": "https://schema.org/Text",
+    "startDate": {
+      "@id": "https://schema.org/startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "expiryDate": {
+      "@id": "https://schema.org/expirationDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "realWorldPlantId": {
+      "@id": "https://schema.b2e2.energy/realWorldPlantId",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "generationType": {
+      "@id": "https://schema.b2e2.energy/generationType",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

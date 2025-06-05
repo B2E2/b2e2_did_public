@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@version": 2,
+    "Erc735Claim": "https://b2e2.github.io/b2e2_did_public/specs/erc-735-claim-v2.jsonld#Erc735Claim",
+    "data": "https://schema.org/Text",
+    "topic": "https://schema.b2e2.energy/topic",
+    "scheme": "https://schema.b2e2.energy/scheme",
+    "signature": "https://schema.b2e2.energy/signature",
+    "issuer": {
+      "@id": "https://www.w3.org/2018/credentials#issuer",
+      "@type": "@id"
+    },
+    "startDate": {
+      "@id": "https://schema.org/startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "expiryDate": {
+      "@id": "https://schema.org/expirationDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  }
+}

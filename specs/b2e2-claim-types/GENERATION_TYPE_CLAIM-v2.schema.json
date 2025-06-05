@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types/GENERATION_TYPE_CLAIM-v2.schema.json",
+  "title": "GENERATION_TYPE_CLAIM",
+  "type": "object",
+  "required": ["@context", "type", "credentialSubject", "issuer", "proof"],
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "type": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "issuer": {
+      "type": "string",
+      "format": "uri"
+    },
+    "validFrom": { "type": "string", "format": "date-time" },
+    "validUntil": { "type": "string", "format": "date-time" },
+    "description": { "type": "string" },
+    "credentialSubject": {
+      "type": "object",
+      "required": ["id", "generationType", "realWorldPlantId", "startDate", "expiryDate"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "data": { "type": "string" },
+        "startDate": { "type": "string", "format": "date-time" },
+        "expiryDate": { "type": "string", "format": "date-time" },
+        "generationType": { "type": "string", "enum": ["FISSION", "FUSION", "PV", "PVP", "CSP", "GEOTHERMAL", "HEATPUMP", "ONSHOREWIND", "OFFSHOREWIND", "WAVE", "NATURALGAS", "BIOGAS", "BROWNCOAL", "BLACKCOAL", "OIL", "DIESEL", "GARBAGE", "HYDROR", "HYDROPS", "HYDROWS", "OTHER"] },
+        "realWorldPlantId": { "type": "string" }
+      }
+    },
+    "proof": {
+      "type": "object",
+      "required": [
+        "type",
+        "created",
+        "proofPurpose",
+        "verificationMethod",
+        "blockchainAccountId",
+        "proofValue"
+      ],
+      "properties": {
+        "type": { "type": "string" },
+        "created": { "type": "string", "format": "date-time" },
+        "proofPurpose": { "type": "string" },
+        "verificationMethod": { "type": "string", "format": "uri" },
+        "blockchainAccountId": { "type": "string" },
+        "proofValue": { "type": "string" }
+      }
+    }
+  }
+}
