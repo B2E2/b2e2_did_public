@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+
+    "BalanceConvertedToSoulboundEvent": "https://b2e2.github.io/b2e2_did_public#BalanceConvertedToSoulboundEvent",
+
+    "value": {
+      "@id": "https://schema.org/value",
+      "@type": "https://schema.org/QuantitativeValue"
+    },
+    "generationPlant": {
+      "@id": "https://b2e2.github.io/b2e2_did_public#generationPlant",
+      "@type": "@id"
+    },
+    "balancePeriod": {
+      "@id": "https://b2e2.github.io/b2e2_did_public#balancePeriod",
+      "@context": {
+        "from": {
+          "@id": "https://schema.org/startDate",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "to": {
+          "@id": "https://schema.org/endDate",
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      }
+    },
+    "blockchain": {
+      "@id": "https://b2e2.github.io/b2e2_did_public#blockchain",
+      "@context": {
+        "name": "https://schema.org/name",
+        "chainId": "https://b2e2.github.io/b2e2_did_public#chainId",
+        "protocol": "https://b2e2.github.io/b2e2_did_public#protocol",
+        "onChainEvent": {
+          "@id": "https://b2e2.github.io/b2e2_did_public#onChainEvent",
+          "@context": {
+            "blockHash": "https://b2e2.github.io/b2e2_did_public#blockHash",
+            "blockNumber": {
+              "@id": "https://b2e2.github.io/b2e2_did_public#blockNumber",
+              "@type": "http://www.w3.org/2001/XMLSchema#integer"
+            },
+            "transactionHash": "https://b2e2.github.io/b2e2_did_public#transactionHash",
+            "logIndex": {
+              "@id": "https://b2e2.github.io/b2e2_did_public#logIndex",
+              "@type": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}
