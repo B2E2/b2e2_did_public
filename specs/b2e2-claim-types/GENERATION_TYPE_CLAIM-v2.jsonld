@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@version": 2,
+    "@version": 1.1,
     "GENERATION_TYPE_CLAIM": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types/GENERATION_TYPE_CLAIM-v2.jsonld#GENERATION_TYPE_CLAIM",
     "data": "https://schema.org/Text",
     "startDate": {
