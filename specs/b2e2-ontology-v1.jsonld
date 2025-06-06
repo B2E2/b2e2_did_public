@@ -91,8 +91,8 @@
       "@comment": "Other – any energy generation type not categorized above."
     },
 
-    "type": {
-      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#type",
+    "data.type": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-ontology-v1.jsonld#data.type",
       "@type": "@vocab"
     },
 
