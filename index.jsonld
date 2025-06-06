@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "b2e2": "https://b2e2.github.io/b2e2_did_public#"
+  },
+  "@graph": [
+    {
+      "@id": "b2e2:BalanceConvertedToSoulboundEvent",
+      "@type": "rdfs:Class",
+      "rdfs:label": "BalanceConvertedToSoulboundEvent",
+      "rdfs:comment": "An event that attests to the conversion of a tokenized energy balance into a soulbound form, representing the retirement of energy tokens and their binding to a specific identity contract.",
+      "rdfs:isDefinedBy": "https://b2e2.github.io/b2e2_did_public"
+    }
+  ]
+}
