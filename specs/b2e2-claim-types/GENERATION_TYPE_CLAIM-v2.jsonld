@@ -1,8 +1,11 @@
 {
   "@context": {
     "@version": 1.1,
-    "data": "https://schema.org/Text",
     "GENERATION_TYPE_CLAIM": "https://b2e2.github.io/b2e2_did_public#GENERATION_TYPE_CLAIM",
+    "data": {
+      "@id": "https://schema.org/Text",
+      "@comment": "Contains JSON-encoded claim data"
+    },
     "startDate": {
       "@id": "https://schema.org/startDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
