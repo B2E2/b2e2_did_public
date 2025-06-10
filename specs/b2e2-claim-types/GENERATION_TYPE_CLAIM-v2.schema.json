@@ -32,7 +32,11 @@
         "data": { "type": "string" },
         "startDate": { "type": "string", "format": "date-time" },
         "expiryDate": { "type": "string", "format": "date-time" },
-        "generationType": { "type": "string", "enum": ["FISSION", "FUSION", "PV", "PVP", "CSP", "GEOTHERMAL", "HEATPUMP", "ONSHOREWIND", "OFFSHOREWIND", "WAVE", "NATURALGAS", "BIOGAS", "BROWNCOAL", "BLACKCOAL", "OIL", "DIESEL", "GARBAGE", "HYDROR", "HYDROPS", "HYDROWS", "OTHER"] },
+        "generationType": {
+          "type": "string",
+          "enum": ["FISSION", "FUSION", "PV", "PVP", "CSP", "GEOTHERMAL", "HEATPUMP", "ONSHOREWIND", "OFFSHOREWIND", "WAVE", "NATURALGAS", "BIOGAS", "BROWNCOAL", "BLACKCOAL", "OIL", "DIESEL", "GARBAGE", "HYDROR", "HYDROPS", "HYDROWS", "OTHER"],
+          "description": "Type of energy generation technology"
+        },
         "realWorldPlantId": { "type": "string" }
       }
     },

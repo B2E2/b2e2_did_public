@@ -1,7 +1,7 @@
 {
   "@context": {
     "@version": 1.1,
-    "GENERATION_TYPE_CLAIM": "https://b2e2.github.io/b2e2_did_public#GENERATION_TYPE_CLAIM",
+    "GENERATION_TYPE_CLAIM": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#GENERATION_TYPE_CLAIM",
     "data": {
       "@id": "https://schema.org/Text",
       "@comment": "Contains JSON-encoded claim data"
@@ -15,12 +15,98 @@
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "realWorldPlantId": {
-      "@id": "https://schema.b2e2.energy/realWorldPlantId",
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#realWorldPlantId",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "generationType": {
-      "@id": "https://schema.b2e2.energy/generationType",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType",
+      "@type": "@vocab",
+      "@context": {
+        "FISSION": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/FISSION",
+          "@comment": "Nuclear fission – energy from splitting atomic nuclei."
+        },
+        "FUSION": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/FUSION",
+          "@comment": "Nuclear fusion – energy from fusing atomic nuclei."
+        },
+        "PV": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/PV",
+          "@comment": "Photovoltaics – rooftop or small-scale solar panels converting sunlight to electricity."
+        },
+        "PVP": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/PVP",
+          "@comment": "Photovoltaics park – large-scale solar farms generating electricity from sunlight."
+        },
+        "CSP": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/CSP",
+          "@comment": "Concentrated Solar Power – mirrors focus sunlight to produce thermal energy and generate electricity."
+        },
+        "GEOTHERMAL": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/GEOTHERMAL",
+          "@comment": "Geothermal – energy from Earth's internal heat."
+        },
+        "HEATPUMP": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/HEATPUMP",
+          "@comment": "Heat pump – transfers heat from air, ground, or water to provide heating or cooling."
+        },
+        "ONSHOREWIND": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/ONSHOREWIND",
+          "@comment": "Onshore wind – wind turbines located on land generating electricity."
+        },
+        "OFFSHOREWIND": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/OFFSHOREWIND",
+          "@comment": "Offshore wind – wind turbines located at sea."
+        },
+        "WAVE": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/WAVE",
+          "@comment": "Wave – energy derived from ocean surface waves."
+        },
+        "NATURALGAS": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/NATURALGAS",
+          "@comment": "Natural gas – fossil fuel used in thermal power generation."
+        },
+        "BIOGAS": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/BIOGAS",
+          "@comment": "Biogas – produced from organic matter through anaerobic digestion."
+        },
+        "BROWNCOAL": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/BROWNCOAL",
+          "@comment": "Brown coal (lignite) – a soft, brownish coal used in thermal power generation."
+        },
+        "BLACKCOAL": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/BLACKCOAL",
+          "@comment": "Black coal – harder and higher energy coal compared to brown coal."
+        },
+        "OIL": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/OIL",
+          "@comment": "Oil – petroleum used in energy production."
+        },
+        "DIESEL": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/DIESEL",
+          "@comment": "Diesel – refined petroleum product used in generators and engines."
+        },
+        "GARBAGE": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/GARBAGE",
+          "@comment": "Garbage – waste used for incineration and energy recovery."
+        },
+        "HYDROR": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/HYDROR",
+          "@comment": "Run-of-river hydro – uses river flow without large reservoirs to generate electricity."
+        },
+        "HYDROPS": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/HYDROPS",
+          "@comment": "Pumped-storage hydro – stores energy by pumping water to a higher elevation and releasing it to generate electricity when needed."
+        },
+        "HYDROWS": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/HYDROWS",
+          "@comment": "Reservoir hydro – conventional hydroelectric power from large dammed reservoirs."
+        },
+        "OTHER": {
+          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#generationType/OTHER",
+          "@comment": "Other – any energy generation type not categorized above."
+        }
+      }
     }
   }
 }
