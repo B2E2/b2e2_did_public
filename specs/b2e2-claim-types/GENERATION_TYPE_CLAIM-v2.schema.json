@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types/GENERATION_TYPE_CLAIM-v2.schema.json",
   "title": "GENERATION_TYPE_CLAIM",
+  "description": "Specifies the type of energy generation of the plant (e.g., PV, Wind, etc.)",
   "type": "object",
   "required": ["@context", "type", "credentialSubject", "issuer", "proof"],
   "properties": {
