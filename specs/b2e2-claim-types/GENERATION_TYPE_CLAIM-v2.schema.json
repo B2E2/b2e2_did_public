@@ -40,6 +40,7 @@
       "type": "object",
       "required": [
         "type",
+        "cryptosuite",
         "created",
         "proofPurpose",
         "verificationMethod",
@@ -48,6 +49,7 @@
       ],
       "properties": {
         "type": { "type": "string" },
+        "cryptosuite": { "type": "string" },
         "created": { "type": "string", "format": "date-time" },
         "proofPurpose": { "type": "string" },
         "verificationMethod": { "type": "string", "format": "uri" },
