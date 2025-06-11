@@ -20,8 +20,8 @@
     },
     "type": {
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType",
-      "@type": "@vocab",
       "@context": {
+        "@version": 1.1,
         "@vocab": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType/",
         "generation": {
           "@id": "generation",
