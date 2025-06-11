@@ -22,20 +22,21 @@
       "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType",
       "@type": "@vocab",
       "@context": {
+        "@vocab": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType/",
         "generation": {
-          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType/generation",
+          "@id": "generation",
           "@comment": "The plant is a generation facility"
         },
         "consumption": {
-          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType/consumption",
+          "@id": "consumption",
           "@comment": "The plant is a consumption facility"
         },
         "storage": {
-          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType/storage",
+          "@id": "storage",
           "@comment": "The plant is an energy storage facility"
         },
         "hybrid": {
-          "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#existenceType/hybrid",
+          "@id": "hybrid",
           "@comment": "The plant has multiple functions (generation/consumption/storage)"
         }
       }
