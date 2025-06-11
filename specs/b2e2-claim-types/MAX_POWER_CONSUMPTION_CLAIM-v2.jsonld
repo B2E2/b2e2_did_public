@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "MAX_POWER_CONSUMPTION_CLAIM": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#MAX_POWER_CONSUMPTION_CLAIM",
+    "data": {
+      "@id": "https://schema.org/Text",
+      "@comment": "Contains JSON-encoded claim data"
+    },
+    "startDate": {
+      "@id": "https://schema.org/startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "expiryDate": {
+      "@id": "https://schema.org/expirationDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "realWorldPlantId": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#realWorldPlantId",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "maxCon": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#maxPowerConsumption",
+      "@type": "http://www.w3.org/2001/XMLSchema#string",
+      "@comment": "Maximum power consumption capacity in watts (as string to support large numbers)"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "IS_METERING_AUTHORITY": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types#IS_METERING_AUTHORITY",
+    "data": {
+      "@id": "https://schema.org/Text",
+      "@comment": "Contains JSON-encoded claim data"
+    },
+    "startDate": {
+      "@id": "https://schema.org/startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "expiryDate": {
+      "@id": "https://schema.org/expirationDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  }
+}

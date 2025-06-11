@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "ecdsa-secp256k1-erc735-2025": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/data-integrity-proof-v2.jsonld#ecdsa-secp256k1-erc735-2025",
+      "@type": "@id",
+      "@context": {
+        "proofValue": "https://w3id.org/security#proofValue",
+        "verificationMethod": "https://w3id.org/security#verificationMethod",
+        "proofPurpose": "https://w3id.org/security#proofPurpose",
+        "blockchainAccountId": "https://b2e2.github.io/b2e2_did_public/specs/data-integrity-proof-v2.jsonld#blockchainAccountId",
+        "created": "http://purl.org/dc/terms/created"
+      },
+      "description": "ECDSA secp256k1 proof compatible with ERC-735: signature is over keccak256(address, topic, data) bytes."
+    },
+    "ecdsa-secp256k1-vc-2025": {
+      "@id": "https://b2e2.github.io/b2e2_did_public/specs/data-integrity-proof-v2.jsonld#ecdsa-secp256k1-vc-2025",
+      "@type": "@id",
+      "@context": {
+        "proofValue": "https://w3id.org/security#proofValue",
+        "verificationMethod": "https://w3id.org/security#verificationMethod",
+        "proofPurpose": "https://w3id.org/security#proofPurpose",
+        "blockchainAccountId": "https://b2e2.github.io/b2e2_did_public/specs/data-integrity-proof-v2.jsonld#blockchainAccountId",
+        "created": "http://purl.org/dc/terms/created"
+      },
+      "description": "ECDSA secp256k1 signature over the canonical representation (W3C RDF canonicalization) of the VC data."
+    }
+  }
+}
