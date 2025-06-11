@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types/ENERGY_TOKEN_CONTRACT_CLAIM-v2.schema.json",
+  "title": "ENERGY_TOKEN_CONTRACT_CLAIM",
+  "description": "Specifies the valid Energy Token Contract designated by the Market Authority.",
+  "type": "object",
+  "required": ["@context", "type", "credentialSubject", "issuer", "proof"],
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "type": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "issuer": {
+      "type": "string",
+      "format": "uri"
+    },
+    "validFrom": { 
+      "type": "string", 
+      "format": "date-time" 
+    },
+    "validUntil": { 
+      "type": "string", 
+      "format": "date-time" 
+    },
+    "description": { 
+      "type": "string" 
+    },
+    "credentialSubject": {
+      "type": "object",
+      "required": ["id", "energyTokenContractAddress", "startDate", "expiryDate"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "data": { 
+          "type": "string" 
+        },
+        "startDate": { 
+          "type": "string", 
+          "format": "date-time" 
+        },
+        "expiryDate": { 
+          "type": "string", 
+          "format": "date-time" 
+        },
+        "energyTokenContractAddress": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "description": "Ethereum address of the Energy Token smart contract"
+        }
+      }
+    },
+    "proof": {
+      "type": "object",
+      "required": [
+        "type",
+        "cryptosuite",
+        "created",
+        "proofPurpose",
+        "verificationMethod",
+        "blockchainAccountId",
+        "proofValue"
+      ],
+      "properties": {
+        "type": { "type": "string" },
+        "cryptosuite": { "type": "string" },
+        "created": { "type": "string", "format": "date-time" },
+        "proofPurpose": { "type": "string" },
+        "verificationMethod": { "type": "string", "format": "uri" },
+        "blockchainAccountId": { "type": "string" },
+        "proofValue": { "type": "string" }
+      }
+    }
+  }
+}

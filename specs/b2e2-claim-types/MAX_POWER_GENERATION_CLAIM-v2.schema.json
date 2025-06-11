@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://b2e2.github.io/b2e2_did_public/specs/b2e2-claim-types/MAX_POWER_GENERATION_CLAIM-v2.schema.json",
+  "title": "MAX_POWER_GENERATION_CLAIM",
+  "description": "Specifies the maximum electrical power output of the generation plant.",
+  "type": "object",
+  "required": ["@context", "type", "credentialSubject", "issuer", "proof"],
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "type": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "issuer": {
+      "type": "string",
+      "format": "uri"
+    },
+    "validFrom": { "type": "string", "format": "date-time" },
+    "validUntil": { "type": "string", "format": "date-time" },
+    "description": { "type": "string" },
+    "credentialSubject": {
+      "type": "object",
+      "required": ["id", "maxGen", "realWorldPlantId", "startDate", "expiryDate"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "data": { "type": "string" },
+        "startDate": { "type": "string", "format": "date-time" },
+        "expiryDate": { "type": "string", "format": "date-time" },
+        "realWorldPlantId": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "maxGen": {
+          "type": "string",
+          "pattern": "^[0-9]+$",
+          "description": "Maximum power generation capacity in watts (as a string to avoid number size limitations)"
+        }
+      }
+    },
+    "proof": {
+      "type": "object",
+      "required": [
+        "type",
+        "cryptosuite",
+        "created",
+        "proofPurpose",
+        "verificationMethod",
+        "blockchainAccountId",
+        "proofValue"
+      ],
+      "properties": {
+        "type": { "type": "string" },
+        "cryptosuite": { "type": "string" },
+        "created": { "type": "string", "format": "date-time" },
+        "proofPurpose": { "type": "string" },
+        "verificationMethod": { "type": "string", "format": "uri" },
+        "blockchainAccountId": { "type": "string" },
+        "proofValue": { "type": "string" }
+      }
+    }
+  }
+}
